@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                      // Target JavaScript version
+    "module": "commonjs",                // Use CommonJS module system
+    "outDir": "./dist",                  // Output directory for compiled files
+    "rootDir": "./",                     // Root directory for the project
+    "strict": true,                      // Enable all strict type-checking options
+    "esModuleInterop": true,             // Enable interop between ESModules and CommonJS
+    "forceConsistentCasingInFileNames": true, // Ensure file name casing consistency
+    "skipLibCheck": true,                // Skip type checking of declaration files
+    "resolveJsonModule": true,           // Allow importing JSON files
+    "typeRoots": ["./node_modules/@types"], // Specify type declaration directories
+    "types": ["node"]                    // Include Node.js type declarations
+  },
+  "include": [
+    "server.ts",                          // Main server entry point
+    "config/**/*.ts",                     // All TypeScript files in the config directory
+    "controllers/**/*.ts",                // All TypeScript files in the controllers directory
+    "middlewares/**/*.ts",                // All TypeScript files in the middlewares directory
+    "models/**/*.ts",                     // All TypeScript files in the models directory
+    "routes/**/*.ts",                     // All TypeScript files in the routes directory
+    "services/**/*.ts"                    // All TypeScript files in the services directory
+  ],
+  "exclude": [
+    "node_modules",                       // Exclude node_modules
+    "dist"                                // Exclude the output directory
+  ]
+}
