@@ -1,4 +1,3 @@
-// src/react-dom-client.d.ts
 declare module 'react-dom/client' {
     import { ReactNode } from 'react';
   
