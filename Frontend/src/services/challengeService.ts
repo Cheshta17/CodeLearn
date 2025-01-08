@@ -65,18 +65,14 @@ const challenges: Challenge[] = [
 ];
 
 export const getChallenges = async (): Promise<Challenge[]> => {
-  // In a real application, you would fetch this data from Firestore
   return challenges;
 };
 
 export const getChallengeById = async (id: number): Promise<Challenge | undefined> => {
-  // In a real application, you would fetch this data from Firestore
   return challenges.find(challenge => challenge.id === id);
 };
 
 export const submitChallenge = async (challengeId: number, code: string, language: string) => {
-  // In a real application, you would send this data to a backend for processing
-  // and receive the results of running the code against all test cases
   const challenge = await getChallengeById(challengeId);
   if (!challenge) {
     throw new Error('Challenge not found');
