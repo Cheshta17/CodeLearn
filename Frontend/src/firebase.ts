@@ -1,11 +1,9 @@
-// Import the functions you need from the SDKs
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth, GoogleAuthProvider, GithubAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getDatabase } from "firebase/database";
 
-// Your Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBPgmatI0kMgpE4M1nXQlogOc3uB1yU-Xg",
   authDomain: "coding-platform-a52ba.firebaseapp.com",
@@ -17,17 +15,14 @@ const firebaseConfig = {
   measurementId: "G-YNNK6HN4QW",
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
 const db = getFirestore(app);
 const realtimeDb = getDatabase(app);
 
-// Providers for third-party auth
 const googleProvider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
 
-// Export initialized Firebase services
 export { app, analytics, auth, db, realtimeDb, googleProvider, githubProvider };
 
