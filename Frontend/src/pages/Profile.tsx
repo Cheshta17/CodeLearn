@@ -14,9 +14,7 @@ const Profile: React.FC = () => {
         <p className="mb-2">Completed Challenges: {user.completedChallenges}</p>
         <p className="mb-2">Current Streak: {user.currentStreak} days</p>
         <h3 className="text-lg font-semibold mt-6 mb-2">Badges</h3>
-        {/* Add badge display here */}
         <h3 className="text-lg font-semibold mt-6 mb-2">Progress History</h3>
-        {/* Add progress history chart or list here */}
       </div>
     </div>
   );
