@@ -5,7 +5,6 @@ import { useDispatch } from 'react-redux';
 import { signUp, signInWithGithub, signInWithGoogle } from '../services/userService';
 import { setUser } from '../store/userSlice';
 
-// Define the UserState type to match your Redux store's requirements
 type UserState = {
   id: string;
   name: string;
@@ -15,7 +14,6 @@ type UserState = {
   badges: string[];
 };
 
-// Transform a user object to UserState
 const transformUserToUserState = (user: any): UserState => ({
   id: user.id || '',
   name: user.name || '',
@@ -65,7 +63,7 @@ const Register: React.FC = () => {
     try {
       const user = await signInWithGoogle();
       const userState = transformUserToUserState(user);
-      dispatch(setUser(userState)); // Use transformed UserState
+      dispatch(setUser(userState)); 
       navigate('/');
     } catch (err) {
       setError('Failed to sign in with Google');
