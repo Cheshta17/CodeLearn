@@ -1,7 +1,6 @@
 import { db } from '../firebase';
 import { collection, query, orderBy, limit, getDocs, doc, updateDoc } from 'firebase/firestore';
 
-// Define the LeaderboardEntry interface here instead of importing it
 interface LeaderboardEntry {
   id: string;
   name: string;
