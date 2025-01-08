@@ -18,10 +18,6 @@ With its responsive and visually appealing frontend, seamless backend integratio
 - **OAuth-based login** via Google and GitHub, powered by **Firebase Authentication**.
 - Responsive design built with **Tailwind CSS** ensures optimal experience across all devices.
 
-### Challenge Repository
-- A curated collection of challenges with varying levels of difficulty to help you grow step by step.
-- Automatic test case evaluation ensures accurate progress tracking.
-
 ### Leaderboard and Progress Tracking
 - Stay motivated by climbing the leaderboard as you accumulate points.
 - Monitor your progress with a personalized dashboard displaying achievements and coding streaks.
