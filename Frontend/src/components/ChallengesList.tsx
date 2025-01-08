@@ -12,7 +12,6 @@ const ChallengesList: React.FC = () => {
         setChallenges(fetchedChallenges);
       } catch (error) {
         console.error('Error loading challenges:', error);
-        // You could show an error message or an empty state
       }
     };
 
