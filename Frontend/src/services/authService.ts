@@ -1,9 +1,6 @@
 import { auth, googleProvider, githubProvider } from '../firebase';
 import { signInWithPopup, signInWithEmailAndPassword } from 'firebase/auth';
 
-/**
- * Sign in with Google provider.
- */
 export const signInWithGoogle = async () => {
   try {
     const result = await signInWithPopup(auth, googleProvider);
@@ -14,9 +11,6 @@ export const signInWithGoogle = async () => {
   }
 };
 
-/**
- * Sign in with GitHub provider.
- */
 export const signInWithGithub = async () => {
   try {
     const result = await signInWithPopup(auth, githubProvider);
@@ -27,9 +21,6 @@ export const signInWithGithub = async () => {
   }
 };
 
-/**
- * Sign in with email and password.
- */
 export const signIn = async (email: string, password: string) => {
   try {
     const result = await signInWithEmailAndPassword(auth, email, password);
