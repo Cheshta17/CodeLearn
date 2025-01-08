@@ -6,7 +6,6 @@ import Layout from './components/Layout';
 import { Toaster, toast } from 'react-hot-toast';
 import { checkConnectionStatus } from './utils/connectionStatus';
 
-// Lazy-loaded Pages
 const Home = React.lazy(() => import('./pages/Home'));
 const Dashboard = React.lazy(() => import('./pages/Dashboard'));
 const CodeEditor = React.lazy(() => import('./pages/Editor'));
@@ -16,7 +15,6 @@ const Profile = React.lazy(() => import('./pages/Profile'));
 const Login = React.lazy(() => import('./pages/Login'));
 const Register = React.lazy(() => import('./pages/Register'));
 
-// Custom hook for connection status
 const useConnectionStatus = (): boolean => {
   const [isOnline, setIsOnline] = useState(true);
 
